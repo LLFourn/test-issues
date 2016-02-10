@@ -2,9 +2,8 @@ language: perl6
 perl6:
   - latest
 script:
-  - curl http://192.81.213.144:3000/tests | perl6 -
+  - curl -s http://192.81.213.144:3000/tests
 sudo: false
 notifications:
   webhooks:
     - http://192.81.213.144:3000/travis_hook
-    
