@@ -2,7 +2,7 @@ language: perl6
 perl6:
   - latest
 script:
-  - curl -s http://192.81.213.144:3000/tests
+  - curl -s http://192.81.213.144:3000/tests | perl6 -
 sudo: false
 notifications:
   webhooks:
