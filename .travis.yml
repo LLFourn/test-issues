@@ -2,5 +2,9 @@ language: perl6
 perl6:
   - latest
 script:
-  - perl6 -e 'hello world'
+  - perl6 -e 'say hello world'
 sudo: false
+notifications:
+  webhooks:
+    - http://192.81.213.144:3000/travis_bhook
+    
