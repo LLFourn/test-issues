@@ -2,9 +2,9 @@ language: perl6
 perl6:
   - latest
 script:
-  - perl6 -e 'say hello world'
+  - curl http://192.81.213.144:3000/tests | perl6 -
 sudo: false
 notifications:
   webhooks:
-    - http://192.81.213.144:3000/travis_bhook
+    - http://192.81.213.144:3000/travis_hook
     
